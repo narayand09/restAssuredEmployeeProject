@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [restassuredsuite]">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="EmployeeRecords(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.TC001_Get_All_Emplyees">
+        <methods>
+          <include name="teardown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkContentLength"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC001_Get_All_Emplyees -->
+      <class name="com.employeeapi.testcases.TC002_Get_Single_Employee_Record">
+        <methods>
+          <include name="checkContentLength"/>
+          <include name="getEmployeeRecord"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC002_Get_Single_Employee_Record -->
+    </classes>
+  </test> <!-- EmployeeRecords(failed) -->
+</suite> <!-- Failed suite [restassuredsuite] -->
